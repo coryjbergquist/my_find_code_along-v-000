@@ -2,12 +2,10 @@ require 'pry'
 
 def my_find(collection)
   x = 0
-  new_array = []
     while x < collection.length
-    new_array << yield(collection[x])
+    if yield(collection[x])
+      return collection[x]
+    end
     x += 1
   end
-if new_array(true)
-  
-
-end
+  end
