@@ -7,5 +7,7 @@ def my_find(collection)
     new_array << yield(collection[x])
     x += 1
   end
+if new_array(true)
+  
 
 end
